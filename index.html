@@ -1,0 +1,41 @@
+<html style="background-color:aqua">
+    <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no">
+<head>
+    <div style="text-align:center;padding:40px;font-size:40;animation: slideinleft 1s ease ;animation-iteration-count: infinite;animation-duration: 2s;-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+    <img src="title.png" alt="">
+
+</div>
+</head>
+<body>
+    <div>
+    </div>
+    <div id="bleh" style="text-align:center;padding:10px;font-size:larger;background-color:white;border:black;border-radius:10px;width:70px;background-color:black;color: white;">
+        <p id="count" style="text-align: center;"></p>
+    </div>
+    <div style="text-align:center;">
+        <button type="button" onclick="HEY()" style="background-color: aqua;"> 
+            <img src="cooki.png" />
+        </button>
+    </div>
+</body>
+
+<script>  
+    let c = 1;
+    function HEY() {
+        d = c++;
+        document.getElementById("count").innerText = d;
+        
+ 
+    }
+</script>
+<style>
+    @keyframes slideinleft {
+        from{
+            transform: rotate(360deg);
+        }
+        to{
+            transform: rotate(0deg);
+        }
+    }
+</style>
+</html>
